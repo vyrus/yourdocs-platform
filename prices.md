@@ -4,8 +4,108 @@
 Amazon EC2
 ----------
 
+Standard Instances:
+- Small Instance (Default) 1.7 GB of memory, 1 EC2 Compute Unit (1 virtual core with 1 EC2 Compute Unit), 160 GB of local instance storage, 32-bit platform
+- Large Instance 7.5 GB of memory, 4 EC2 Compute Units (2 virtual cores with 2 EC2 Compute Units each), 850 GB of local instance storage, 64-bit platform
+- Extra Large Instance 15 GB of memory, 8 EC2 Compute Units (4 virtual cores with 2 EC2 Compute Units each), 1690 GB of local instance storage, 64-bit platform
+
+High-Memory Instances:
+- High-Memory Extra Large Instance 17.1 GB memory, 6.5 ECU (2 virtual cores with 3.25 EC2 Compute Units each), 420 GB of local instance storage, 64-bit platform
+- High-Memory Double Extra Large Instance 34.2 GB of memory, 13 EC2 Compute Units (4 virtual cores with 3.25 EC2 Compute Units each), 850 GB of local instance storage, 64-bit platform
+- High-Memory Quadruple Extra Large Instance 68.4 GB of memory, 26 EC2 Compute Units (8 virtual cores with 3.25 EC2 Compute Units each), 1690 GB of local instance storage, 64-bit platform
+
+High-CPU Instances:
+- High-CPU Medium Instance 1.7 GB of memory, 5 EC2 Compute Units (2 virtual cores with 2.5 EC2 Compute Units each), 350 GB of local instance storage, 32-bit platform
+- High-CPU Extra Large Instance 7 GB of memory, 20 EC2 Compute Units (8 virtual cores with 2.5 EC2 Compute Units each), 1690 GB of local instance storage, 64-bit platform
+
+### US – N. Virginia
+
+Standard On-Demand Instances
+Small (Default) - $0.085/ч.
+Large           - $0.34/ч.
+Extra Large     - $0.68/ч.
+
+High-Memory On-Demand Instances    
+Extra Large            - $0.50/ч.
+Double Extra Large     - $1.20/ч.
+Quadruple Extra Large  - $2.40/ч.
+
+High-CPU On-Demand Instances    
+Medium      - $0.17/ч.
+Extra Large - $0.68/ч.
+
+### US – N. California, EU – Ireland, APAC – Singapore  
+
+Standard On-Demand Instances
+Small (Default) - $0.095/ч.
+Large           - $0.38/ч.
+Extra Large     - $0.76/ч.
+
+High-Memory On-Demand Instances    
+Extra Large           - $0.57/ч.
+Double Extra Large    - $1.34/ч.
+Quadruple Extra Large - $2.68/ч.
+
+High-CPU On-Demand Instances    
+Medium      - $0.19/ч.
+Extra Large - $0.76/ч.
+
+Пример:
+- Small (Default), US – N. Virginia - $62.22 = 1 895.22 руб./месяц
+- Small (Default), EU – Ireland     - $69.54 = 2 118.19 руб./месяц
+
+- Large, US – N. Virginia - $248.88 = 7 580.88 руб./месяц
+- Large, EU – Ireland     - $278.16 = 8 472.75 руб./месяц
+
+Входящий трафик бесплатный до 1 ноября 2010, после - $0.10/Гб.
+
+Исходяший трафик (US & EU Regions):
+- первый 1 Гб/месяц      - $0.00/Гб
+- до 1 Тб/месяц          - $0.15/Гб
+- следующие 40 Тб/месяц  - $0.11/Гб
+- следующие 100 Тб/месяц - $0.09/Гб
+- свыше 150 Тб/месяц     - $0.08/Гб
+
+Пример (US & EU Regions):
+- первый Тб исходящего трафика - $153.6 = 4 678.66 руб. 
+- последующий исходящий трафик до 40 Тб - $112,64 = 3 431 руб.
+
+Amazon EBS
+----------
+
+### US – N. Virginia
+
+$0.10 - Гб/месяц
+$0.10 - 1 миллион I/O-запросов
+
+### US – N. California, EU – Ireland, APAC – Singapore
+
+$0.11 - Гб/месяц 
+$0.11 - 1 миллион I/O-запросов
+
+Пример:
+US – N. Virginia: 1 Тб - $102,4 = 3 119.1 руб.
+EU – Ireland, 1 Тб     - $112.64 = 3 431 руб.
+
 Amazon S3
 ---------
+
+### US – Standard, EU – Ireland
+
+Хранение (надёжность 99.999999999%):
+- первые 50 Тб/месяц - $0.150/Гб
+
+Хранение (надёжность 99.99%):
+- первые 50 Тб/месяц  - $0.100/Гб
+
+Трафик:
+- входящий - бесплатный до 1 ноября 2010, после - $0.100/Гб 
+- исходящий (до 10 Тб) - $0.150/Гб 
+
+Пример:
+ - 1 Тб, надёжность 99.999999999% - $153.6 = 4 678.65 руб.
+ - 1 Тб, надёжность 99.99%        - $102.4 = 3 119.10 руб.
+ - 1 Тб исходящего трафика        - $153.6 = 4 678.65 руб. 
 
 .masterhost
 ------------
@@ -58,11 +158,11 @@ HP Proliant DL160R06 XeonQC 2.0GHz, 4Gb RAM, 2x160Gb SATA - 6 200 руб./мес
 HP Proliant DL160R06 XeonQC 2.0GHz, 4Gb RAM, 2x300Gb SAS  - 8 100 руб./месяц
 
 Трафик:
-    - 1 терабайт, превышение - 1,5 руб./Гб
-    - неограниченный (без учета соотношений), 10 мбит/сек   - 3 000 руб./месяц
-    - неограниченный (без учета соотношений), 100 мбит/сек  - 25 000 руб./месяц
-    - включена полоса (burstable), в состав которой входит 5 мегабит/сек. полосы 
-      бесплатно и 400р. за дополнительный 1 мегабит/сек.
+- 1 терабайт, превышение - 1,5 руб./Гб
+- неограниченный (без учета соотношений), 10 мбит/сек   - 3 000 руб./месяц
+- неограниченный (без учета соотношений), 100 мбит/сек  - 25 000 руб./месяц
+- включена полоса (burstable), в состав которой входит 5 мегабит/сек. полосы 
+  бесплатно и 400р. за дополнительный 1 мегабит/сек.
 
 SpaceWeb
 --------

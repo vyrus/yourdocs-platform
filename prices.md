@@ -180,10 +180,10 @@ Supermicro 5016T-MTF, Intel® Xeon® E5504 2.0 GHz (4 ядра, 4 потока),
 FastVPS.ru
 ----------
 
-Установка: 49 eur.
+Установка: 49 eur. = 1 912 руб.
 
-### AMD Opteron Dual Core 1218 5200+ (2 ядра), 4GB DDR2, 2x300GB SATA2 (software RAID1) - 59 eur./месяц
-### AMD Athlon 64 X2 4200+ (2 ядра), 2GB DDR2 RAM, 2x300GB HDD SATA2 (software RAID1)   - 49 eur./месяц
+### AMD Opteron Dual Core 1218 5200+ (2 ядра), 4GB DDR2, 2x300GB SATA2 (software RAID1) - 59 eur. = 2 302 руб./месяц
+### AMD Athlon 64 X2 4200+ (2 ядра), 2GB DDR2 RAM, 2x300GB HDD SATA2 (software RAID1)   - 49 eur. = 1 912 руб./месяц
 
 Трафик безлимитный, но при превышении порога в 5 Tb в течение календарного 
 месяца - скорость порта меняется с 100 на 10 mbit/sec, ограничение действует 
